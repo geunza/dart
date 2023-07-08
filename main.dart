@@ -1,4 +1,5 @@
 void main() {
+  /*
   // 변수를 지정하는 기본 방법 2가지.
   // 1. var
   // 2. String등의 명시적 타입 선언
@@ -27,8 +28,69 @@ void main() {
   String? geunyoung = "geunyoung";
   // geunyoung.length
   if (geunyoung != null) {
-    geunyoung.isNotEmpty;
+    print(geunyoung.isNotEmpty);
   }
-  geunyoung?.isNotEmpty;
+  // print(geunyoung?.isNotEmpty);
   geunyoung = null;
+
+  // 값을 변경할 수 없는 final
+  final name3 = "Geun";
+  final String name4 = "Geun";
+
+  // late
+  late final String name5;
+  // do something, go to api
+  // print(name5); // 출력하지 못함. 왜냐면 아직 값이 들어오지 않았기 때문.
+  name5 = "geunyoung5";
+  print(name5);
+  // name5 = "geunyoung!"; // 재할당 X
+
+  const api_key = "123123123";
+  const max_allowed_rpice = 120;   
+  */
+
+  String name = "geunyoung";
+  bool alive = true;
+  int age = 30;
+  double money = 69.99;
+  num x = 12;
+  x = 1.1;
+
+  // var numbers = [1, 2, 3, 4,];
+  var giveMeFive = true;
+  List<int> numbers = [
+    1,
+    2,
+    3,
+    4,
+    if (giveMeFive) 5,
+  ];
+  numbers.add(1);
+  print(numbers);
+
+  var greeting = 'Hello everyone, my name is $name and I\'m ${age + 2}';
+  print(greeting);
+
+  var oldFriends = ['nico', 'lynn'];
+  var newFriends = [
+    'lewis',
+    'ralph',
+    'dareen',
+    for (var friend in oldFriends) "💖$friend"
+  ];
+
+  print(newFriends);
+
+  Map<int, bool> dummyPlayer = {1: false, 2: true};
+  Map<List<int>, bool> dummyPlayer2 = {
+    [1, 2, 3, 4, 5]: true
+  };
+  var player = {
+    'name': 'geunyoung',
+    "xp": 19.99,
+    'superpower': false,
+  };
+
+  Set<int> dummySet = {1, 2, 3, 4};
+  var numbersSet = {1, 2, 3, 4};
 }
