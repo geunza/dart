@@ -48,3 +48,6 @@
 - return값에 따른 타입 선언이 필요.(void, String , num 등)
 - fat arrow function 사용 가능 : num plus(num a, num b) => a + b;
 - named parameter ( null safety : default value 설정 or required modifier 이용)
+- optional parameter : [type? variable = defaultValue] 형태
+- QQ operator : left ?? right : 좌항이 null이라면 right를 리턴.(js와 같음)
+- typedef : 자료형에 alias 부여, Map으로 뭔가를 보낼때 타입만을 확인할 수 있다는 한계가 존재함.

@@ -1,3 +1,37 @@
+typedef UserInfo = Map<String, String>;
+
+String sayHi(UserInfo userInfo) {
+  return "Hi ${userInfo['name']}";
+}
+
+//typedef
+// typedef ListOfInts = List<int>;
+// ListOfInts reverseListOfNumbers(ListOfInts list) {
+//   var reversed = list.reversed;
+//   return reversed.toList();
+// }
+
+/*
+//QQ Operatior
+String capitalizeName(String? name) => name?.toUpperCase() ?? "ANON";
+//
+// String capitalizeName(String? name) =>
+//     name != null ? name.toUpperCase() : "ANON";
+//
+// String capitalizeName(String? name) {
+//   if (name != null) {
+//     return name.toUpperCase();
+//   }
+//   return "ANON";
+// }
+*/
+/*
+  //Optional Parameter
+  String sayHello(String name, int age, [String? country = 'korea']) =>
+      'Hello $name, you are $age years old from $country';
+*/
+/*
+//Named Parameter
 String sayHello({
   required String name,
   required int age,
@@ -5,7 +39,7 @@ String sayHello({
 }) {
   return "Hello $name, you are $age, and you come from $country";
 }
-
+*/
 void main() {
   /*
   // 변수를 지정하는 기본 방법 2가지.
@@ -104,5 +138,29 @@ void main() {
   Set<int> dummySet = {1, 2, 3, 4};
   var numbersSet = {1, 2, 3, 4};
   */
-  print(sayHello(name: "geunyoung", age: 30, country: "korea,"));
+  /*
+  //Named Parameter
+    print(sayHello(name: "geunyoung", age: 30, country: "korea,"));
+  */
+  /*
+    //Optional Parameter
+    var result = sayHello('geunyoung', 30);
+    print(result);
+  */
+  /*
+    // QQ Operator
+    // capitalizeName('geunyoung');
+    // capitalizeName(null);
+
+    String? name;
+    name ??= 'geunyoung';
+    name = null;
+    name ??= 'another';
+    print(name);
+  */
+
+  //typedef
+
+  // print(reverseListOfNumbers([1, 2, 3, 4, 5, 6]));
+  print(sayHi({"name": "geunyoung"}));
 }
