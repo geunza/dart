@@ -1,3 +1,11 @@
+String sayHello({
+  required String name,
+  required int age,
+  required String country,
+}) {
+  return "Hello $name, you are $age, and you come from $country";
+}
+
 void main() {
   /*
   // 변수를 지정하는 기본 방법 2가지.
@@ -49,6 +57,8 @@ void main() {
   const max_allowed_rpice = 120;   
   */
 
+  /*
+  //230709 데이터형식
   String name = "geunyoung";
   bool alive = true;
   int age = 30;
@@ -93,4 +103,6 @@ void main() {
 
   Set<int> dummySet = {1, 2, 3, 4};
   var numbersSet = {1, 2, 3, 4};
+  */
+  print(sayHello(name: "geunyoung", age: 30, country: "korea,"));
 }

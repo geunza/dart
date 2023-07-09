@@ -42,3 +42,9 @@
 
 - var greeting = 'Hello everyone, my name is $name and I\'m ${age + 2}';
 - 위와 같이 사용 가능. 단순히 변수만 쓸 때에는 $변수명, 계산이 필요할 때에는 ${변수 + 계산식}
+
+### Functions
+
+- return값에 따른 타입 선언이 필요.(void, String , num 등)
+- fat arrow function 사용 가능 : num plus(num a, num b) => a + b;
+- named parameter ( null safety : default value 설정 or required modifier 이용)
