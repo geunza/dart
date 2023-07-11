@@ -51,3 +51,17 @@
 - optional parameter : [type? variable = defaultValue] 형태
 - QQ operator : left ?? right : 좌항이 null이라면 right를 리턴.(js와 같음)
 - typedef : 자료형에 alias 부여, Map으로 뭔가를 보낼때 타입만을 확인할 수 있다는 한계가 존재함.
+
+## 230711
+
+### class
+
+- Flutter는 class로 시작해서 class로 끝난다
+- instance를 만들때 new 를 붙이지 않아도 됨.(붙여도 됨)
+- class 함수 내부에서 동일한 이름의 변수를 선언하지 않은 이상 this를 붙이지 않아도 됨(붙이지 않는것이 권고)
+- constructor에서 named parameter와 같이 arguments의 key값으로 value 지정 가능
+- named constructor
+  -- named parameter => Class.namedConstructor({required type key}) : this.key = value;
+  -- positional parameter => 기본적으로 모든 parameter는 required
+- instance생성시 클래스의 semi colon을 제거하고, ..key로 value 지정 가능
+  -- ex) var geunyoung = Player(name: 'geunyoung', xp: 1200, team: 'red')..name = "testName"..xp = 1200000;
