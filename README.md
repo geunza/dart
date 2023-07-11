@@ -61,7 +61,11 @@
 - class 함수 내부에서 동일한 이름의 변수를 선언하지 않은 이상 this를 붙이지 않아도 됨(붙이지 않는것이 권고)
 - constructor에서 named parameter와 같이 arguments의 key값으로 value 지정 가능
 - named constructor
-  -- named parameter => Class.namedConstructor({required type key}) : this.key = value;
-  -- positional parameter => 기본적으로 모든 parameter는 required
+  - named parameter => Class.namedConstructor({required type key}) : this.key = value;
+  - positional parameter => 기본적으로 모든 parameter는 required
 - instance생성시 클래스의 semi colon을 제거하고, ..key로 value 지정 가능
-  -- ex) var geunyoung = Player(name: 'geunyoung', xp: 1200, team: 'red')..name = "testName"..xp = 1200000;
+  ```dart
+  var geunyoung = Player(name: 'geunyoung', xp: 1200, team: 'red')
+    ..name = "testName"
+    ..xp = 1200000;
+  ```
