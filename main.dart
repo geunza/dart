@@ -1,7 +1,11 @@
+enum Team { red, blue }
+
+enum XPLevel { beginner, mdeium, pro }
+
 class Player {
   String name;
-  int xp;
-  String team;
+  XPLevel xp;
+  Team team;
 
   Player({
     required this.name,
@@ -42,10 +46,10 @@ class Player {
 }
 
 void main() {
-  var geunyoung = Player(name: 'geunyoung', xp: 1200, team: 'red')
+  var geunyoung = Player(name: 'geunyoung', xp: XPLevel.mdeium, team: Team.red)
     ..name = "testName"
-    ..xp = 1200000
-    ..team = "blue"
+    ..xp = XPLevel.pro
+    ..team = Team.blue
     ..sayHello();
 
   /*
