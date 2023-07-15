@@ -6,7 +6,7 @@ enum Team { red, blue }
 
 enum XPLevel { beginner, mdeium, pro }
 
-class Player extends walk {
+class Player extends Human {
   String name;
   XPLevel xp;
   Team team;
